@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Country 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link type="text/css" rel="stylesheet" href="./style.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <style>
+      div.imagetiles div.col-lg-3.col-md-3.col-sm-3.col-xs-6 {
+        padding: 0px;
+      }
+
+      header {
+        position: relative;
+        background-color: black;
+        height: 89vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      header .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+      }
+      h1{
+        margin-bottom: 2%;
+        margin-top: -1%;
+      }
+
+      /* @media (pointer: coarse) and (hover: none) {
+        header {
+          background: url("./images/sun_sky2.jpg")
+           black no-repeat center center scroll;
+        }
+        header video {
+          display: none;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- ---------------------------------------------------------------------------------
+                                             NAVIGATION
+     ------------------------------------------------------------------------------------ -->
+    <header>
+      
+      <div class="overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="./images/wheat2.mp4" type="video/mp4" />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Experience Ukraine</h1>
+            <p class="lead mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="my-5 mb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h1 class="page-header text-center"> Ukraine Is Open For Tourism! </h1>
+           
+              <p>
+                Did you know that Ukraine is a country that strikes a perfect
+                balance between familiarity and uniqueness unlike any other
+                countries in Europe? No one big cities in Ukraine is the same. Due
+                to its close proximity to Western Europe, Romania, and Russia,
+                Ukrainian cities like Lviv has that familiarity to its neighboring
+                Poland. 
+              </p>
+          </div>
+          <div class="col-md-10 mx-auto"> 
+            <!-- <h3 class="text-center">Incredible Recreation Park</h3>      -->
+                <p>
+                  Kyiv and Kharkiv lend its vibe from its Soviet past while
+                fostering and breaking its way out for a new and unique identity
+                of its own. Odesa is also its own thing with a perfect blend
+                between cultures from the people (Turks, Slavs, etc.) that
+                inhabited the place, while Yaremche maintains their folk culture
+                shared among several countries in the Carpathian Mountains. 
+                Take a look at <strong>amazing Ukraine
+                <a href="https://www.youtube.com/watch?app=desktop&v=qZMMJo7jOTQ&list=PL_hTL1t2DOUYfvq-5zI_9XrjT_2UxAnTG"
+                  target="_blank">here</a></strong> 
+                </p>
+                
+          </div>    
+              <br>
+              
+          
+          <div class="col-md-11 mx-auto">
+            <h3 class="text-center">When To Visit Ukraine</h3>
+              <p class="text-right">
+                In general, the best time to visit Ukraine is either side of summer in
+                May-June or September. Temperatures are comfortable, sightseeing is less
+                crowded and there are fewer holiday makers flocking to the Black Sea
+                beach resorts around Odessa. Spring blossom in the Carpathians makes
+                Apr-May an extremely attractive time of year although it can still get
+                chilly, especially at night. If you can withstand the heat, humidity and
+                thunder storms of Jul-Aug, city sightseeing can be surprisingly
+                uncrowded as many Ukrainians head south to the coast or bolt to their
+                country cottages. 
+             </p>
+             
+          </div>
+          <!-- <div class="col-md-12 mx-auto">
+            <h3 class="page-header text-center"> Sightseeings </h3>
+              <p>
+                Did you know that Ukraine is a country that strikes a perfect
+                balance between familiarity and uniqueness unlike any other
+                countries in Europe? No one big cities in Ukraine is the same. Due
+                to its close proximity to Western Europe, Romania, and Russia,
+                Ukrainian cities like Lviv has that familiarity to its neighboring
+                Poland. 
+              </p> -->
+              
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------------
+                                             CONTENT
+     ------------------------------------------------------------------------------------ -->
+    <!-- --------------------------------------------------------------------  -->
+    
+    <!-- -------------------------- Pictures grid------------------------ -->
+
+    <div class="container my-pictures">
+      <h3 class="font-weight-bold text-md-center"> Picteresque and varicoloured Ukraine</h3>
+
+      
+
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column 1-->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <img src="./images/vert3.jpeg" class="img-fluid mb-4" alt="" />
+
+          <img
+            src="./images/ukr5.jpg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.8s"
+          />
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column 2-->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img
+            src="./images/ukr13.png"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.1s"
+          />
+
+          <img
+            src="./images/vert1.JPG"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.4s"
+          />
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column 3-->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img
+            src="./images/vert7.jpeg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.2s"
+          />
+
+          <img
+            src="./images/ukr15.png"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.5s"
+          />
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+
+    <!-- Videos--------------------------------------------------------------------  -->
+
+    <div class = "container-fluid">
+      <div class="row mb-4">
+        <div class="col col-sm-12 col-md-5">
+          <iframe width="100%" height="400" class="iframe-video" src="https://www.youtube.com/embed/bSRgoA09oMg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="col col-sm-12 col-md-7">
+          <h5 class="mt-1 text-center text-decoration-underline"> <strong>Ukrainian developers rank 5th among the best software developers in the world</strong></h5>
+          <br>
+            <p class = "it text-left"> 
+              Ukraine is becoming a <strong>leading IT outsourcing destination</strong> in Europe due to its booming tech ecosystem reaching $8.4B of industry export volume in 2025, a large talent pool of 200K IT professionals, and strong tech education.Ukrainian software developers are recognized among the 5th strongest IT professionals globally thanks to their solid technical expertise, high English proficiency level(70% speak English on an upper-intermediate level), and knowledg e of emerging disciplines (Go, AI, big data, blockchain, etc.)
+              No wonder Microsoft, Samsung Electronics, Apple, etc. hire developers in Ukraine to build cutting-edge software solutions.
+              <br>
+              Software development is the most advanced and popular field in Ukraine that has been recently increased by 2.5 times. By the end of 2020, the Ukrainian IT industry is expected to reach $10 billion in value. According to the PWC report, Ukraine is ranked 5th among the Top 25 IT services exporters. The local software development community has grown by 27% in 2017 and currently employs over 200,000 IT specialists. Ukrainian developers rank  <a href="https://www.daxx.com/blog/outsourcing-ukraine/why-ukraine-best-it-outsourcing-destination#:~:text=By%20the%20end%20of%202020,employs%20over%20200%2C000%20IT%20specialists.">5th among the best software developers in the world</a> 
+               with an average score index of 93,17%. If compared to Europe, Ukrainian software developers take 4th place. (Skillvalue 2019 Report). 
+               <br><br>
+               Ukraine ranks 1st globally by the number of Unity3D game developers and C++ engineers, and 2nd when it comes to JavaScript, Scala, and Magento developers. According to Linkedin Research compiled by Daxx, Ukraine has 9K PHP Developers, 8K Java, and 8K JavaScript Developers, 3K Python Developers, 1K Ruby on Rails Software Developers.
+            </p>
+            
+
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col col-sm-12 col-md-7">
+          <h3 class="mt-1 text-center text-uppercase"><strong>Chernobyl</strong></h3>
+          <br>
+          <p class = "chernobyl text-left">On April 26, 1986, the Chernobyl Nuclear Power Plant in Ukraine, Soviet Union suffered a massive explosion that released radioactive material across Belarus, Russia and Ukraine and as far as Scandinavia and western Europe. Chernobyl dramatizes the story of the 1986 accident, one of the worst man-made catastrophes in history, and the sacrifices made to save Europe from the unimaginable disaster. 
+          <br><br>
+          On April 27 the 30,000 inhabitants of Prypyat began to be evacuated. A cover-up was attempted, but on April 28 Swedish monitoring stations reported abnormally high levels of wind-transported radioactivity and pressed for an explanation. The Soviet government admitted there had been an accident at Chernobyl, thus setting off an international outcry over the dangers posed by the radioactive emissions. By May 4 both the heat and the radioactivity leaking from the reactor core were being contained, albeit at great risk to workers. Radioactive debris was buried at some 800 temporary sites, and later in the year the highly radioactive reactor core was enclosed in a concrete-and-steel sarcophagus (which was later deemed structurally unsound).
+          <br><br> Are you familiar with the term Dark Tourism? Visitors to Ukraine can add the <strong>Chernobyl Nuclear Power Plant</strong>, ground zero for the disaster, to the list. If you want to book the Chernobyl and Pripyat bus tour visit this <a href="https://toursofchernobyl.com/">website.</a> 
+          </p>
+        </div>
+        <div class="col col-sm-12 col-md-5">
+          <iframe width="100%" height="400" class="iframe-video" src="https://www.youtube.com/embed/s9APLXM9Ei8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </div>
+ 
+    </div>
+  
+    <!-- ---------------------------------------------------------------------------------
+                                             FOOTER
+     ------------------------------------------------------------------------------------ -->
+    <footer>
+      <div class="container-fluid gx-0">
+        <div class="card text-center bg-dark text-white" style="width: 100%">
+          <div class="card-body">
+            <h3 class="card-title">produced by</h3>
+            <h5 class="card-text">
+              Katerina &middot; Yasir &middot; Christian &middot; Frank
+            </h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

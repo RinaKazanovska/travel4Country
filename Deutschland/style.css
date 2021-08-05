@@ -1,0 +1,46 @@
+body{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    background-color: rgb(206, 202, 200);
+    text-shadow: 1px 1px 2px lightcyan;
+    scroll-behavior: smooth;
+}  
+header,
+footer{
+    text-shadow: none;
+    margin-left: -1rem;
+}
+h1{
+  margin-left: -0.8rem;
+}
+
+.carousel-inner > .carousel-item > img {
+  height: 40vh;
+}  
+.hovImgR{
+  float:right; 
+  margin-left:20px; 
+  margin-right: 0;
+}  
+.hovImgL{
+  float:left; 
+  margin-right:20px; 
+  margin-left: 0;
+}
+.hovImgL, 
+.hovImgR{
+  width:25%;  
+  border:5px solid white;  
+  min-width: 150px;
+}
+.hovImgL > img:hover, 
+.hovImgR:hover{
+  width:100%;  
+}
+.hovImgL:hover,
+.hovImgR:hover{
+  width:60%;  
+}
+#flagge:hover{
+  cursor: pointer;
+}

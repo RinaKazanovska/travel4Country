@@ -1,0 +1,13 @@
+nav>ul>li{
+    text-shadow: 1px 1px 1px black;
+}
+
+.carousel-caption>h2{
+font-size: 35px;
+}
+
+.carousel-caption>p{
+    font-size: 25px;
+    color: lavender;
+    text-shadow: 1px 1px 1px black;
+}

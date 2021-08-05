@@ -1,0 +1,64 @@
+section{
+    background: rgba(156, 156, 156, .2);
+}
+
+.video{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin: 30px;
+}
+
+.card:hover{
+    background-color: rgba(218, 214, 214, 0.493);
+
+}
+
+.collapse>ul>li{
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+
+.coloRin{
+    padding-right: 35px;
+    margin-right: 40%;
+    color: rgb(87, 124, 24);
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+.pushLine{
+    font-size: 20px;
+    padding-right: 2vh;
+    float: right;
+    padding-top: 20px;
+}
+
+.textDown{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 100%;
+    justify-content: flex-end;
+    padding-top: 2vh;
+}
+
+.backgroundImage{
+    background-image: url(images/cocuy.JPG);
+    background-repeat: no-repeat;
+    background-position-y: 85%;
+    background-size: cover;
+    position: relative; 
+    background-color: tomato; 
+}
+
+.backgroundImage-blur::before{
+    content: '';
+    display: block;
+    background: inherit;
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    filter: blur(15px);
+    transform: scale(1.2,1.4);
+  }

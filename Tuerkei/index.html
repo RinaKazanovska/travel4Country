@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Türkei</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link type="text/css" rel="stylesheet" href="./style.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #myVideo {
+      position: absolute;
+      right: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    /* Add some content at the bottom of the video/page */
+    .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      /* background: rgba(0, 0, 0, 0.3); */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Style the button used to pause/play the video */
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+
+    .card,
+    .card1 {
+      display: inline-block;
+    }
+
+    .card img {
+      height: 200px;
+    }
+
+    .card1 img {
+      height: 400px;
+    }
+
+    .text-light p {
+      width: 80%;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+
+    .column {
+      padding: 5px;
+      padding: 0 4px;
+    }
+
+    .fünf-städte {
+      flex: 50%;
+    }
+
+    .urlaub {
+      flex: 25%;
+      /* max-width: 25%; */
+    }
+
+    .row {
+      display: flex;
+      /* flex-wrap: wrap; */
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    .urlaub img {
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .urlaub img:hover {
+      opacity: 75%;
+      transition: ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- CAPADOCIA VIDEO -->
+    <div class="container-fluid mw-100" style="height: 100vh;" id="turkey">
+      <video autoplay muted loop id="myVideo">
+        <source src="./imgs/The_Beauty_of_Cappadocia_Go_Türkiye.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <!-- <img src="./imgs/Turkey-logo.png" alt="" height="80px" width="auto"> -->
+        <!-- <h1>Heading</h1>
+        <p>Lorem ipsum...</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <a class="navbar-brand ml-3" href="#turkey"><img src="./imgs/Turkey-logo.png" alt="Turkey-logo" height="40px" width="auto"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto px-4">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">4 Länder</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Deutschland</a>
+            <a class="dropdown-item" href="#">Kolumbien</a>
+            <a class="dropdown-item" href="#">Türkei</a>
+            <a class="dropdown-item" href="#">Ukraine</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sprache</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Deutsch</a>
+            <a class="dropdown-item" href="#">Kolumbianisch</a>
+            <a class="dropdown-item" href="#">Türkçe</a>
+            <a class="dropdown-item" href="#">Ukrainisch</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5 text-center py-5 border bg-dark text-light">
+    <h1>Türkei</h1>
+    <hr>
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Karte_der_T%C3%BCrkei.png" alt=""
+      style="width: 80%;" class="shadow-lg my-5"> -->
+
+    <p>Die Türkei (türkisch Türkiye, amtlich Republik Türkei, türkisch Türkiye Cumhuriyeti, kurz T.C.) ist ein
+      Einheitsstaat im vorderasiatischen Anatolien und südosteuropäischen Ostthrakien. Das Land ist seit seiner Gründung
+      im Jahr 1923 als Nachfolgestaat des Osmanischen Reiches laizistisch und kemalistisch ausgerichtet. Der
+      Staatsgründer Mustafa Kemal Atatürk leitete eine Modernisierung der Türkei durch gesellschaftliche und rechtliche
+      Reformen nach dem Vorbild verschiedener europäischer Nationalstaaten ein.
+
+      Geographisch wird das Land meist in sieben Regionen aufgeteilt. In der Türkei leben mehr als 83 Mio. Einwohner
+      (Stand: 2019) auf einer Fläche von 783.562 km². Im Ballungsraum von Istanbul lebt knapp ein Fünftel ihrer
+      Bevölkerung, daneben gibt es weitere Millionenstädte wie die Hauptstadt Ankara, Izmir, Bursa, Adana, Antalya,
+      Konya und weitere. Der Grad der Urbanisierung lag 2017 bei 74,4 %.[7] In der Türkei gibt es 18
+      UNESCO-Welterbestätten und zahlreiche Naturschutzgebiete.
+
+      Die Türkei ist ein Schwellenland mit mittlerem Einkommen. Das Land erbrachte 2016 kaufkraftbereinigt die
+      dreizehntgrößte Wirtschaftleistung der Welt. Die Türkei ist unter anderem Mitglied der OECD, der NATO, der
+      Vereinten Nationen, der G20 sowie der Organisation für Islamische Zusammenarbeit. Seit 1999 ist die Türkei darüber
+      hinaus offiziell ein EU-Beitrittskandidat.</p>
+    <p>Die Türkei wird geographisch in sieben Gebiete oder Regionen unterteilt. Vier Regionen sind nach den anliegenden
+      Meeren benannt: Schwarzmeerregion, Marmararegion, Ägäisregion und Mittelmeerregion. Drei Regionen sind nach ihrer
+      Lage in Anatolien benannt: Zentralanatolien, Ostanatolien und Südostanatolien. Diese Regionen unterscheiden sich
+      stark bezüglich Vegetation und Wetterbedingungen.</p>
+    <hr>
+  </div>
+
+  <!-- 5 GROSS STÄDTE -->
+  <div class="container-fluid my-5 p-5" style="background-color:beige">
+    <h2 class="text-center my-5 py-3 text-dark">5 Groß Städte in der Türkei</h2>
+
+    <div class="row align-items-center my-5">
+      <div class="column fünf-städte">
+        <h3 class="text-center">Platz 1: Istanbul</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est accusantium excepturi culpa
+          doloremque, repellat blanditiis architecto inventore animi placeat ex tempora, tenetur reprehenderit deleniti,
+          minima optio. Dignissimos, delectus eum.</p>
+      </div>
+      <div class="column fünf-städte text-center">
+        <img src="./imgs/istanbul.jpg" alt="Istanbul" width="400" height="300" class="shadow-lg fünstädt">
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="column fünf-städte text-center">
+        <img src="./imgs/ankara.jpg" alt="Ankara" width="400" height="300" class="shadow-lg">
+      </div>
+      <div class="column fünf-städte">
+        <h3 class="text-center">Platz 2: Ankara</h3>
+        <p>Zweitgrößte Stadt der Türkei ist Ankara mit knapp 5,3 Millionen Einwohnern. ...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est accusantium excepturi culpa
+          doloremque, repellat blanditiis architecto inventore animi placeat ex tempora, tenetur reprehenderit deleniti,
+          minima optio. Dignissimos, delectus eum.</p>
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="column fünf-städte">
+        <h3 class="text-center">Platz 3: Izmir</h3>
+        <p>Izmir war früher unter dem lateinischen Namen Smyrna bekannt und ist heute Zuhause für rund
+          4,1 Millionen Menschen. ...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est accusantium excepturi culpa
+          doloremque, repellat blanditiis architecto inventore animi placeat ex tempora, tenetur reprehenderit deleniti,
+          minima optio.</p>
+      </div>
+      <div class="column fünf-städte text-center">
+        <img src="./imgs/izmir.png" alt="Izmir" width="400" height="300" class="shadow-lg">
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="column fünf-städte text-center">
+        <img src="./imgs/bursa.jpg" alt="Bursa" width="400" height="300" class="shadow-lg">
+      </div>
+      <div class="column fünf-städte">
+        <h3 class="text-center">Platz 4: Bursa</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est accusantium excepturi culpa
+          doloremque, repellat blanditiis architecto inventore animi placeat ex tempora, tenetur reprehenderit deleniti,
+          minima optio. Dignissimos, delectus eum.</p>
+      </div>
+    </div>
+    <div class="row align-items-center my-5">
+      <div class="column fünf-städte">
+        <h3 class="text-center">Platz 5: Adana</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est accusantium excepturi culpa
+          doloremque, repellat blanditiis architecto inventore animi placeat ex tempora, tenetur reprehenderit deleniti,
+          minima optio.</p>
+      </div>
+      <div class="column fünf-städte text-center">
+        <img src="./imgs/adana.jpg" alt="Adana" width="400" height="300" class="shadow-lg">
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLLING BILDER -->
+  <div class="container-fluid">
+    <div class="container-fluid scrolling-wrapper my-5">
+      <div class="card"><img
+          src="https://cdn.pixabay.com/photo/2020/12/10/10/17/jasper-national-park-5819878_960_720.jpg" alt=""></div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2019/04/24/14/48/hanover-4152279_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/02/06/14/24/hills-5988332_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/06/25/03/04/couple-5338310_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2016/11/02/17/38/japan-1792369_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/09/02/20/52/dock-5539524_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/02/02/17/12/forest-5974610_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/06/15/01/06/sunset-5299957__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/12/22/14/15/snow-5852352_960_720.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/10/08/17/39/waves-5638587_960_720.jpg" alt="">
+      </div>
+    </div>
+    <div class="container-fluid scrolling-wrapper">
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2019/04/08/17/18/tulips-4112431__340.jpg" alt=""></div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2021/02/02/02/34/cafe-5972490__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2021/01/11/21/39/temple-5909803__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2019/10/19/12/21/hot-air-balloons-4561264__340.jpg"
+          alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2020/12/09/21/11/silhouette-5818603__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2020/12/18/15/29/mountains-5842346__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2020/12/09/04/01/iceland-5816353__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2019/04/02/16/11/cat-4098058__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2020/10/07/18/40/waves-5635959__340.jpg" alt="">
+      </div>
+      <div class="card1"><img src="https://cdn.pixabay.com/photo/2020/12/10/08/44/mountains-5819651__340.jpg" alt="">
+      </div>
+    </div>
+    <div class="container-fluid scrolling-wrapper my-5">
+      <div class="card"><img src="" alt=""></div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/03/24/05/08/horse-4962780__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/01/23/18/40/child-5943325__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/01/14/13/10/bread-5916804__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/01/13/16/49/winter-5914653__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/01/23/12/58/mountains-5942460__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2020/01/18/19/28/rose-4776198__340.jpg" alt="">
+      </div>
+      <div class="card"><img
+          src="https://media.istockphoto.com/photos/lady-with-kayak-picture-id516449022?b=1&k=6&m=516449022&s=170667a&w=0&h=Ds6gy4B06bGAvurG-Xj0fa96FxiRNnbf8xhfrjLef2k="
+          alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/01/09/19/59/mountains-5903352__340.jpg" alt="">
+      </div>
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/01/13/16/29/snow-5914604__340.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- URLAUBSORTE -->
+  <div class="container-fluid d-flex align-items-center justify-content-center"
+    style="background-image: url(https://cdn.pixabay.com/photo/2020/12/10/08/44/mountains-5819651__340.jpg); height: 400px; background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <h2 class="text-light shadow-lg p-5" style="font-size: 3rem;">5 schönste Urlaubsorte in der Türkei</h2>
+  </div>
+  <div class="container py-5">
+    <p class="text-justify">Traumhafte Strände mit kristallklarem Wasser, malerische Landschaften und einmalige
+      Architektur – eine Reise in
+      die schönsten Urlaubsorte der Türkei entführt euch in die zauberhafte Welt des Orients. Mit der Aufhebung der
+      Reisewarnung für die vier Provinzen Antalya, Aydin, Izmir und Muğla samt den dortigen Ferienorten ist endlich
+      wieder ein erholsamer und sicherer Urlaub in dem abwechslungsreichen Land möglich. Wir verraten euch die
+      beliebtesten Urlaubsorte der Türkei, in die ihr jetzt wieder reisen könnt, und geben euch Tipps zu den
+      Bestimmungen vor Ort.</p>
+  </div>
+
+  <div class="container">
+    <ul class="mx-auto text-justify border border-top-0 border-right-0 border-dark shadow p-5" style="width: 90%;">
+      <h4 class="text-center mb-5 text-danger">Reisehinweise für die Türkei</h4>
+      <li>Bei der Einreise in die Türkei besteht keine Quarantänepflicht für Urlauber aus Deutschland. Es werden zur
+        Sicherheit Temperaturmessungen durchgeführt. Sollte ein erhöhter Wert gemessen werden, wird gegebenenfalls ein
+        COVID-19-Test vorgenommen.</li>
+      <li>Innerhalb von 48 Stunden vor der Rückreise nach Deutschland stellt ein COVID-19-Test sicher, dass ihr gesund
+        nach Hause zurückkommt. Er kostet zwischen 15 und 30 Euro.</li>
+      <li>Während eures Aufenthalts in der Türkei könnt ihr die besondere Kulinarik des Landes in Restaurants und Cafés
+        kennenlernen und die feinen Sandstrände besuchen. Achtet dabei auf das Logo des Zertifizierungsprogramms
+        „Sicherer Tourismus“, mit dessen QR-Code ihr per Smartphone die Einhaltung der Maßnahmen einsehen könnt.</li>
+      <li>Es besteht in öffentlichen Verkehrsmitteln, auf Marktplätzen und in Supermärkten eine Maskenpflicht und ein
+        Abstandsgebot von 1,5 Metern.</li>
+      <li>Auch Hotels sind mit Gesundheitstests, Abständen zwischen den Liegen an Pool und Strand, abgepackten
+        Handtüchern und strengeren Hygiene-Standards ein sicherer Ort.</li>
+      <li>Die meisten Restaurants, Märkte und Basare sind in den freigegebenen Reiseregionen für Besucher geöffnet.
+        Dennoch solltet ihr euch an eurem Urlaubsort erkundigen, ob das gewünschte Restaurant oder Ausflugsziel derzeit
+        besucht werden kann.</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="column urlaub">
+      <img src="https://cdn.pixabay.com/photo/2020/04/19/16/19/tree-5064341__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/19/19/28/street-5932230__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2019/09/06/04/25/beach-4455433__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/10/08/17/39/waves-5638587__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/11/22/21/44/flower-5768092__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/04/24/03/35/heart-5084900__340.jpg">
+    </div>
+    <div class="column urlaub">
+      <img src="https://cdn.pixabay.com/photo/2017/01/21/13/55/nature-1997282__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2019/04/08/17/18/tulips-4112431__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/06/26/21/36/sun-5344024__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2017/08/06/13/00/sheep-2592305__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/18/15/55/together-5928481__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/03/03/06/39/blue-flax-4897655__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/13/16/49/winter-5914653__340.jpg" alt="">
+    </div>
+    <div class="column urlaub">
+      <img src="https://cdn.pixabay.com/photo/2020/12/09/04/01/iceland-5816353__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/23/16/32/aletsch-glacier-5942962__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/26/09/45/sunbird-5950943__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/20/09/42/lake-5933622__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/12/16/12/05/horse-5836459__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/13/18/07/tree-5914851__340.jpg">
+    </div>
+    <div class="column urlaub">
+      <img src="https://cdn.pixabay.com/photo/2021/01/09/20/23/road-5903402__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/05/31/10/06/sailing-5242101__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2021/01/10/18/01/milky-way-5905903__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2017/08/06/14/12/bokeh-lights-2592859__340.jpg">
+      <img src="https://cdn.pixabay.com/photo/2020/12/09/21/11/women-5818607__340.jpg">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
